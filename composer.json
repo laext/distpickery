@@ -1,0 +1,33 @@
+{
+    "name": "laext/distpickery",
+    "description": "This is a laravel-admin distpickery extension",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "distpickery"],
+    "homepage": "https://github.com/laext/distpickery",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "linkimfly",
+            "email": "linkimfly@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laext\\Distpickery\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laext\\Distpickery\\DistpickeryServiceProvider"
+            ]
+        }
+    }
+}
